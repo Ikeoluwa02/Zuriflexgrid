@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grid.css">
+    <title>Zuri Task</title>
+    <style>
+        body{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.container {
+    width: 700px;
+    height: 500px;
+    background-color: #473e3f;
+    margin: 200px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.col-1 {
+    grid-column: 1/3;
+    background-color: #fc0352;
+}
+
+.col-2 {
+    background-color: #fc0384;
+}
+
+.col-3 {
+    grid-column: 1/2;
+    grid-row: 2/4;
+    background-color: #fc03ec;
+    margin-bottom: 10px;
+}
+
+.col-4 {
+    grid-column: 2/4;
+    grid-row: 2/2.5;
+    background-color: #c203fc;
+    margin-bottom: 10px;
+    gap:10px ;
+}
+
+.col-5 {
+    grid-column: 2/4;
+    grid-row: 2.5/3;
+    background-color: #c203fc;
+    margin-bottom: 10px;
+}
+
+a{
+    margin-top: 20px;
+    padding: 20px;
+    color: white;
+    background-color: blue;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+@media(max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        width:700px ;
+        height: 500px;
+    }
+    .col-1 {
+        grid-column: 1/3;
+        background-color: #fc0352;
+    }
+    
+    .col-2 {
+        background-color: #fc0384;
+        grid-row: 2/3;
+        grid-column:1/3 ;
+    }
+    
+    .col-3 {
+        grid-column: 1/3;
+        grid-row: 3/4;
+        background-color: #fc03ec;
+        margin-bottom: 10px;
+    }
+    
+    .col-4 {
+        grid-column:1/3 ;
+        grid-row: 4/5;
+        background-color: #c203fc;
+        margin-bottom: 10px;
+        gap:10px ;
+    }
+    
+    .col-5 {
+        grid-column:1/3 ;
+        grid-row: 5;
+        background-color: #c203fc;
+        margin-bottom: 10px;
+    }
+}
+    </style>
+</head>
+<body>
+    <a class="button" href="index.html"> FLEX</a>
+    <div class="container">
+        <div class="col-1"></div>
+        <div class="col-2"></div>
+        <div class="col-3"></div>
+        <div class="col-4"></div>
+        <div class="col-5"></div>
+    </div>
+</body>
+</html>
